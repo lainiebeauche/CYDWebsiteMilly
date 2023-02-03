@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Sign up
+        </title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+    <body style="background-color: lightblue;"> 
+
+        <!-- Write the title of the page in a large heading font -->
+        <h1>
+            Sign up
+        </h1>
+        <!-- Show the navbar -->
+        <div>
+            {% include "navbar.html" %}
+        </div>
+
+        {% if session.username %}
+
+            <p> You are already logged in!</p>
+            <a href="{{url_for('profile')}}">Go to Profile</a>
+
+        {% else %}
+            <form action="/signup" method="POST">
+
+                <p>
+                    Name:
+                </p>
+                <p>
+                    <input type="text" name="name" />
+                </p>
+
+                <p>
+                    Username:
+                </p>
+                <p>
+                    <input type="text" name="username" />
+                </p>
+
+                <p>
+                    Password:
+                </p>
+                <p>
+                    <input type="password" name="password" />
+                </p>
+
+                <p>
+                    Age:
+                </p>
+                <p>
+                    <input type="number" name="age" />
+                </p>
+
+                
+
+                <!-- Include HTML from another file that takes care of
+                    displaying errors -->
+                {% include "errors.html" %}
+                <p>
+                    <input type="submit" value="submit" />
+                </p>
+
+            </form>
+
+            Already have an account?
+            Click here to <a href="{{ url_for('login') }}">login</a> instead.
+
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Profile
+        </title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body style=" background-color: lightblue;">
+
+        <!-- Write the title of the page in a large heading font -->
+        <h1>
+            Profile
+        </h1>
+        <!-- Show the navbar -->
+        <div>
+            {% include "navbar.html" %}
+        </div>
+
+        <h1>Welcome, {{ user.name }}!</h1>
+
+        Age: <h3>{{ user.age }}</h3>
+
+    </body>
+</html>

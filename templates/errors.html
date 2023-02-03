@@ -1,0 +1,9 @@
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <p style='color:red' class=flashes>
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </p>
+    {% endif %}
+{% endwith %}

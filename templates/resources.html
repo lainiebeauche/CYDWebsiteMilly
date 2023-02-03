@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+    	<title>
+    		Resources
+    	</title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+    	<body style="background-color: lightblue;">
+
+		<!-- Write the title of the page in a large heading font -->
+        <h1>
+            Resources
+        </h1>
+        <!-- Show the navbar -->
+        <div>
+            {% include "navbar.html" %}
+        </div>
+
+		<h2>
+			We offer sports, education, mentoring, tutoring, and mentalhealth couselors
+		</h2>
+<img height="200px" src="{{ url_for('static', filename= 'Co-ed-Soccer-min(1).png') }}"></img>
+ 
+<img height="200px" src="{{ url_for('static', filename='kidsSummerSports-MK-062520-770x533-1(1).jpg') }}"></img>
+<img height="200px" src="{{ url_for('static', filename='Teenagers_at_Play_(6768191473)(1).jpg') }}">
+<br>
+<img height="200px" src="{{ url_for('static', filename='teens_playing_board_game.jpg')}}"></img>
+<img height="200px" src="{{ url_for('static', filename='happy-teenagers-having-fun-posing-over-white-wall-brick-151908011(1).jpg') }}"></img>
+
+		 
+		
+	</body>
+</html>

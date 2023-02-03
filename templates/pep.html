@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Resources
+        </title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+ <body style=" background-color: lightblue;font-family:Monaco;">   	
+        <!-- Write the title of the page in a large heading font -->
+        <h1>
+            How To Rise Up
+        </h1>
+        <!-- Show the navbar -->
+        <div>
+            {% include "navbar.html" %}
+        </div>
+
+		<h2>Personal Empowerment Protocol</h2>
+		<ol>
+			<li>
+				Sports - Basketball, Volleyball, Swimming, Game board, Baseball <br>
+				<img height="100px" src="{{url_for('static', filename='Co-ed-Soccer-min(1).png')}}">
+
+				<img height="100px" src="{{url_for('static', filename='360_F_252145857_CCDY89bUwMXQPgez9retgp35Q3XC88BB.jpg')}}">
+
+			</li>
+			<li>
+				Homework - WE are here to help you with your homework assigment
+			</li>
+			<li>
+				Counseling- We offer counseling if needed. We also help you with peer preasure, depression, anxiety, problem at schools"
+				<br>
+				<img height="100px" src="{{url_for('static', filename='counseling-boy(1).jpg')}}">
+			</li>
+			<li>
+				Ask an instuctor
+				
+			</li>
+			<li>
+				Excersie
+
+			</li>
+			<li>
+				Help each other
+			</li>
+			<li>
+				Cry together
+			</li>
+		</ol>
+	</body>
+</html>

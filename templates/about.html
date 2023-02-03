@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            About
+        </title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <body style="background-color:lightblue ;">
+
+        <!-- Write the title of the page in a large heading font -->
+        <h1>
+           About Us
+        </h1>
+        <!-- Show the navbar -->
+        <div>
+            {% include "navbar.html" %}
+        </div>
+
+        <p>
+
+         Is a place where young kids can go be comfortable, safe and find help. In here we have resources that can help them with everyday life experience. We also have staff that can help them with tutoring, life experience classes, job trainning,and counseling. Anything they need and make it possible. We can help You to better </p>
+
+        <!-- Smaller subheading font -->
+        <h4>
+            How to get connected
+        </h4>
+
+        <!-- Bullet-point list -->
+        <ul>
+            <li><a href="{{ url_for('pep') }}">Activities</a></li>
+            <li> <a href="https://www.healthline.com/health/stages-of-grief">Mental Health</a></li>
+        </ul>
+
+        <br />
+
+        
+
+    </body>
+</html>

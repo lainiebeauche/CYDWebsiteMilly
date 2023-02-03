@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+    	<title>
+    		Milly Girls and Boys Club
+    	</title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+
+<body style="background-color:lightblue;">
+
+		<!-- Write the title of the page in a large heading font -->
+        <h1>Team Together
+        </h1>
+        <!-- Show the navbar -->
+        <div>
+            {% include "navbar.html" %}
+        </div>
+        <h2>This is an outreach program to help youth fiend friends, activities that will make them feel good about themselves and thrive.
+        <img src="{{ url_for('static', filename='front-page(1).jpg') }}"></img>
+    
+        
+	</body>
+</html>
