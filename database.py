@@ -83,7 +83,6 @@ def authenticate(username, password):
     return False
 
 
-
 def add_message(username, text):
     """Adds a message to the database.
 
@@ -107,3 +106,11 @@ def get_all_messages():
 
     """
     return reversed(SESSION.query(Message).all())
+
+
+def delete_all_users():
+    SESSION.query(User).delete()
+
+
+def delete_all_messages():
+    SESSION.query(Message).delete()
